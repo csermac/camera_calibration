@@ -11,6 +11,7 @@ The parameters will be saved in the file calibration_data/calibration.npz.
 To load the parameters in your scripts do the following:
 
 ```
+import numpy as np
 
 with np.load("calibration_data/calibration.npz") as X:
     mtx, dist, rvecs, tvecs, w, h, pattern_size, rms = [X[i] for i in ("camera_matrix", "dist_coefs", "rvecs", "tvecs", "w", "h", "pattern_size", "rms")]
