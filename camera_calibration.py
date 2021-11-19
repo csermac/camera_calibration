@@ -14,7 +14,6 @@ def splitfn(fn):
 
 
 def draw(img, corners, imgpts):
-
     corner = tuple(corners[0].ravel())
     img = cv2.line(img, corner, tuple(imgpts[0].ravel()), (255, 0, 0), 5)
     img = cv2.line(img, corner, tuple(imgpts[1].ravel()), (0, 255, 0), 5)
@@ -24,7 +23,6 @@ def draw(img, corners, imgpts):
 
 
 def process_image(fn):
-
     print("Processing %s... " % fn)
     img = cv2.imread(fn, 0)
     if img is None:
@@ -53,7 +51,6 @@ def process_image(fn):
 
 
 if __name__ == "__main__":
-
     args, img_mask = getopt.getopt(sys.argv[1:], "", ["debug=", "square_size=", "threads="])
     args = dict(args)
     args.setdefault("--debug", "calibration_data/debug")
@@ -104,23 +101,6 @@ if __name__ == "__main__":
 
     print("camera matrix:\n", camera_matrix)
     print("distortion coefficients:\n", dist_coefs.ravel())
-
-    """
-    camera matrix
-
-    f_x  s    c_x
-    0    f_y  c_y
-    0    0    1
-    """
-
-    fx = mtx.item((0, 0))
-    fy = mtx.item((1, 1))
-
-    cx = mtx.item((0, 2))
-    cy = mtx.item((1, 2))
-
-    print("w, h", w, h)
-    print("fx, fy, cx, cy", fx, fy, cx, cy)
 
     # undistort the image with the calibration
     print("")
