@@ -2,12 +2,15 @@
 
 ## Quick start
 
+<<<<<<< HEAD
 Setup the python pyenv working environment as described in [this guide](https://github.com/csermac/environment)
 
 Install the dependencies:
 
 ```pip install -r requirements.txt```
 
+=======
+>>>>>>> 960cac98e258f4dc358a1001c2f66e611aaa11d2
 Run ```grab_calibration_frames.py``` and press "s" to save the frame containing the chessboard.
 The frames will be saved in the calibration_data/calibration_frames folder.
 
