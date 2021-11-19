@@ -42,4 +42,4 @@ For informations on code styling and conventions consult the [lab style and conv
 
 ## Copyright and license
 
-Code and documentation copyright 2011-2018 the authors. Code released under the [MIT License](https://github.com/csermac/camera_calibration/blob/master/LICENSE.md).
+Code and documentation copyright 2021 the authors. Code released under the [MIT License](https://github.com/csermac/camera_calibration/blob/master/LICENSE.md).
