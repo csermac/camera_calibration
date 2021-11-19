@@ -26,7 +26,7 @@ with np.load("calibration_data/calibration.npz") as X:
 
 ## Bugs and feature requests
 
-Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/csermac/camera_calibration/blob/main/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/csermac/face/issues/new).
+Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/csermac/camera_calibration/blob/main/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/csermac/camera_calibration/issues/new).
 
 ## Contributing
 
